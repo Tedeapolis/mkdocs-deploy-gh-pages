@@ -39,7 +39,6 @@ fi
 
 apk add git git-lfs
 
-git lfs install --local
 git remote rm origin
 git remote add origin "${remote_repo}"
 
