@@ -41,5 +41,6 @@ apk add git git-lfs
 
 git remote rm origin
 git remote add origin "${remote_repo}"
+git lfs install
 
 mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
