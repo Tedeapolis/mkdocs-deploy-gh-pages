@@ -37,6 +37,8 @@ if ! git config --get user.email; then
     git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 fi
 
+apt-get install git-lfs
+
 git lfs install --local
 git remote rm origin
 git remote add origin "${remote_repo}"
